@@ -1,0 +1,22 @@
+{
+  "dxt_version": "0.1",
+  "name": "ra-orchestrator-proxy",
+  "display_name": "Revenue Assurance Orchestrator",
+  "version": "1.0.0",
+  "description": "Connects Claude Desktop to the internal Revenue Assurance knowledge base via HTTP/SSE.",
+  "author": {
+    "name": "Your Name"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "server/proxy.py",
+    "mcp_config": {
+      "command": "python",
+      "args": ["${__dirname}/server/proxy.py"],
+      "env": {
+        "MCP2_URL": "http://127.0.0.1:8002",
+        "PYTHONPATH": "${__dirname}/lib"
+      }
+    }
+  }
+}
