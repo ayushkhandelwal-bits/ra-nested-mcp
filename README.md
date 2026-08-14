@@ -1,4 +1,4 @@
-# ra-nested-mcp
+# RA-Nested-MCP
 
 A two-layer nested MCP (Model Context Protocol) system demonstrating MCP composition over HTTP/SSE — a server that is simultaneously a client to another MCP server.
 
