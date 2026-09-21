@@ -13,18 +13,24 @@ dependencies = [
     "fastapi",
     "uvicorn[standard]",
     "httpx",
+    "pandas",
+    "pyarrow",
+    "scipy",
+    "statsmodels",
 ]
 
 [project.scripts]
 mcp1 = "mcp1_vectorstore.server:main"
 mcp2 = "mcp2_orchestrator.server:main"
+mcp3 = "mcp3_analytics.server:main"
+mcp4 = "mcp4_forecasting.server:main"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/mcp1_vectorstore", "src/mcp2_orchestrator"]
+packages = ["src/mcp1_vectorstore", "src/mcp2_orchestrator", "src/mcp3_analytics", "src/mcp4_forecasting"]
 
 [dependency-groups]
 dev = [
