@@ -7,6 +7,8 @@ from mcp.types import TextContent, Tool
 
 from mcp2_orchestrator.agent import Agent
 from mcp2_orchestrator.mcp1_client import Mcp1Client
+from mcp2_orchestrator.mcp3_client import Mcp3Client
+from mcp2_orchestrator.mcp4_client import Mcp4Client
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -21,10 +23,13 @@ async def list_tools() -> list[Tool]:
         Tool(
             name="ask",
             description=(
-                "Ask a question about telecom Revenue Assurance concepts "
-                "(leakage, reconciliation, CDRs, CRMS/RMS, ETL pipelines, CPI validation). "
-                "The agent will decompose the question, retrieve relevant information "
-                "from the knowledge base, and synthesize a final answer."
+                "Ask a question about telecom Revenue Assurance — conceptual "
+                "(leakage, reconciliation, CDRs, CRMS/RMS, ETL pipelines, CPI validation), "
+                "operational/statistical (KPIs, trends, anomalies, incident impact, hypothesis "
+                "tests, correlations, regional/service/network/plan segmentation), forward-looking "
+                "(30-day revenue leakage forecasts), or any combination. The agent decomposes the "
+                "question, calls the knowledge base and/or the analytics and forecasting data "
+                "sources as needed, and synthesizes a business-friendly final answer."
             ),
             inputSchema={
                 "type": "object",
@@ -48,7 +53,9 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
     question = arguments["question"]
     logger.info("ask: %r", question)
     mcp1 = Mcp1Client()
-    agent = Agent(mcp1)
+    mcp3 = Mcp3Client()
+    mcp4 = Mcp4Client()
+    agent = Agent(mcp1, mcp3, mcp4)
     answer = await agent.run(question)
     logger.info("answer: %s", answer)
     return [TextContent(type="text", text=answer)]

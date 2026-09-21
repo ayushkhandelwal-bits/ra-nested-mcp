@@ -12,8 +12,12 @@ class Settings(BaseSettings):
     groq_api_key: str
     groq_model: str = "llama-3.3-70b-versatile"
 
-    # URL of the MCP 1 HTTP/SSE server
+    # URL of the MCP 1 HTTP/SSE server (knowledge/RAG)
     mcp1_url: str = "http://localhost:8001"
+    # URL of the MCP 3 HTTP/SSE server (analytics)
+    mcp3_url: str = "http://localhost:8003"
+    # URL of the MCP 4 HTTP/SSE server (forecasting)
+    mcp4_url: str = "http://localhost:8004"
     mcp2_port: int = 8002
 
 

@@ -1,0 +1,37 @@
+event_id,start_date,end_date,event_type,severity,affected_system,affected_region,affected_service,description,resolution_status,intervention_date
+EVT101,2025-01-04,2025-01-05,Processing Delay,Low,Reconciliation,South,Data,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2025-01-06
+EVT102,2025-01-21,2025-01-22,Reconciliation Issue,Low,Rating,East,SMS,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2025-01-23
+EVT001,2025-02-10,2025-02-13,Mediation Failure,High,Mediation,North,Data,Mediation platform node failure caused a backlog of unprocessed Data CDRs in the North region.,Resolved,2025-02-16
+EVT103,2025-02-28,2025-03-02,Reconciliation Issue,Low,Mediation,North,Roaming,Minor operational event logged by monitoring; no significant metric deviation.,Closed - No Action,2025-03-02
+EVT002,2025-04-05,2025-04-08,Rating Engine Issue,Medium,Rating,South,Voice,Faulty tariff table update caused Voice call rating errors in the South region.,Resolved,2025-04-09
+EVT104,2025-04-05,2025-04-06,Reconciliation Issue,Low,Rating,North,SMS,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2025-04-06
+EVT105,2025-04-16,2025-04-18,Processing Delay,Low,Rating,East,Voice,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2025-04-18
+EVT106,2025-04-23,2025-04-25,Processing Delay,Low,Billing,South,SMS,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2025-04-24
+EVT107,2025-06-08,2025-06-09,Reconciliation Issue,Low,Rating,North,Voice,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2025-06-10
+EVT108,2025-06-09,2025-06-11,Reconciliation Issue,Low,Mediation,North,Voice,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2025-06-10
+EVT003,2025-06-20,2025-06-22,Billing Outage,Critical,Billing,All,All,Core billing platform outage prevented invoicing across all regions and services.,Resolved,2025-06-24
+EVT109,2025-07-18,2025-07-19,Reconciliation Issue,Low,Billing,East,Roaming,Minor operational event logged by monitoring; no significant metric deviation.,Closed - No Action,2025-07-19
+EVT110,2025-07-31,2025-08-01,Processing Delay,Low,Mediation,South,Roaming,Minor operational event logged by monitoring; no significant metric deviation.,Closed - No Action,2025-08-02
+EVT004,2025-08-01,2025-08-05,Duplicate CDR,Medium,Mediation,East,SMS,Mediation reprocessing job created duplicate SMS CDRs in the East region.,Resolved,2025-08-08
+EVT111,2025-08-21,2025-08-22,Reconciliation Issue,Low,Billing,North,Voice,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2025-08-22
+EVT005,2025-09-15,2025-09-19,Processing Delay,Low,Mediation,West,Data,Upstream network probe backlog delayed Data CDR delivery to mediation in the West region.,Resolved,2025-09-20
+EVT112,2025-09-22,2025-09-23,Reconciliation Issue,Low,Billing,North,Roaming,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2025-09-23
+EVT113,2025-10-13,2025-10-15,Processing Delay,Low,Mediation,South,Roaming,Minor operational event logged by monitoring; no significant metric deviation.,Closed - No Action,2025-10-14
+EVT114,2025-10-24,2025-10-26,Reconciliation Issue,Low,Rating,East,SMS,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2025-10-25
+EVT006,2025-11-10,2025-11-14,Network Migration,High,Mediation,North,All,5G core network migration in the North region caused intermittent CDR feed loss.,Resolved,2025-11-17
+EVT007,2026-01-05,2026-01-09,Reconciliation Issue,Medium,Reconciliation,All,Roaming,Roaming partner settlement mismatch delayed reconciliation of inbound roaming CDRs.,Resolved,2026-01-11
+EVT115,2026-01-29,2026-01-31,Configuration Error,Low,Billing,North,Roaming,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2026-01-30
+EVT116,2026-02-06,2026-02-07,Reconciliation Issue,Low,Rating,North,Data,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2026-02-07
+EVT008,2026-03-01,2026-03-02,Regional Outage,Critical,Network,South,All,Sudden regional network outage in the South cut off CDR generation for ~36 hours.,Resolved,2026-03-04
+EVT117,2026-03-01,2026-03-03,Reconciliation Issue,Low,Billing,West,Data,Minor operational event logged by monitoring; no significant metric deviation.,Closed - No Action,2026-03-03
+EVT009,2026-05-12,2026-05-15,Configuration Error,Medium,Rating,East,Voice,Misconfigured rate plan deployment caused Voice rating errors in the East region.,Resolved,2026-05-16
+EVT118,2026-07-01,2026-07-02,Processing Delay,Low,Mediation,North,SMS,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2026-07-02
+EVT119,2026-07-15,2026-07-16,Processing Delay,Low,Mediation,East,SMS,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2026-07-17
+EVT010,2026-07-22,2026-07-24,Billing Outage,High,Billing,West,Data,Billing gateway timeout errors affected Data service invoicing in the West region.,Resolved,2026-07-26
+EVT120,2026-07-28,2026-07-30,Reconciliation Issue,Low,Billing,East,Roaming,Minor operational event logged by monitoring; no significant metric deviation.,Closed - No Action,2026-07-30
+EVT121,2026-09-05,2026-09-06,Processing Delay,Low,Billing,North,Data,Minor operational event logged by monitoring; no significant metric deviation.,Closed - No Action,2026-09-07
+EVT011,2026-09-10,2026-09-12,Duplicate CDR,Low,Mediation,All,Voice,Mediation failover test inadvertently duplicated a batch of Voice CDRs.,Resolved,2026-09-14
+EVT122,2026-10-18,2026-10-19,Processing Delay,Low,Reconciliation,North,Voice,Minor operational event logged by monitoring; no significant metric deviation.,Closed - No Action,2026-10-19
+EVT123,2026-10-22,2026-10-24,Reconciliation Issue,Low,Reconciliation,East,Roaming,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2026-10-24
+EVT124,2026-12-05,2026-12-06,Reconciliation Issue,Low,Billing,South,SMS,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2026-12-07
+EVT125,2026-12-19,2026-12-20,Configuration Error,Low,Reconciliation,North,Roaming,Minor operational event logged by monitoring; no significant metric deviation.,Resolved,2026-12-21
