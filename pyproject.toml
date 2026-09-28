@@ -34,6 +34,7 @@ packages = ["src/mcp1_vectorstore", "src/mcp2_orchestrator", "src/mcp3_analytics
 
 [dependency-groups]
 dev = [
+    "pytest>=9.1.1",
     "ruff>=0.15.2",
     "ty>=0.0.18",
 ]
