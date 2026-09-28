@@ -13,7 +13,7 @@ from mcp2_orchestrator.settings import settings
 
 logger = logging.getLogger(__name__)
 
-MAX_ITERATIONS = 12
+MAX_ITERATIONS = 25
 
 SYSTEM_PROMPT = """\
 You are a Revenue Assurance (telecom) analytics and decision-support agent. \

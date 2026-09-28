@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 # ----------------------------------------------------------------------
 
 def _parse_date(d: str | date | None) -> pd.Timestamp | None:
-    if d is None:
+    if d is None or (isinstance(d, str) and not d.strip()):
         return None
     return pd.Timestamp(d)
 
